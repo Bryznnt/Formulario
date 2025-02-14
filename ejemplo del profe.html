@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Validacion</h1>
+    <form action="">
+      <input type="text" required />
+      <br />
+      <input type="text" minlength="5" maxlength="15" />
+      <br />
+      <input type="number" min="5" max="20" />
+      <input type="submit" value="Enviar" />
+    </form>
+ 
+    <h1>Formulario</h1>
+ 
+    <form action="">
+      <fieldset>
+        <legend>Informacion personal</legend>
+        <div>
+          <label for="name">Nombre</label>
+          <input id="name" type="text" placeholder="ingresa tu nombre" />
+        </div>
+        <br />
+        <div>
+          <label for="descripcion">Descripcion</label>
+          <textarea name="" id="descripcion"></textarea>
+        </div>
+        <br />
+        <div>
+          <label for="">Correo</label>
+          <input type="email" />
+        </div>
+        <br />
+        <div>
+          <label for="password">Contrasenha</label>
+          <input id="password" type="password" />
+        </div>
+        <br />
+        <div>
+          Radio:
+          <label for="">hombre</label>
+          <input type="radio" name="genero" value="hombre" />
+          <label for="">Mujer</label>
+          <input type="radio" name="genero" value="mujer" />
+        </div>
+        <br />
+        <div>
+          <label for="">Select</label>
+          <select name="" id="">
+            <option value="hombre">hombre</option>
+            <option value="mujer">mujer</option>
+            <option value="otro">otro</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          Checkbox:
+          <label for="">frontend</label>
+          <input type="checkbox" name="edad" value="frontend" />
+          <label for="">backend</label>
+          <input type="checkbox" name="edad" value="backend" />
+        </div>
+        <br />
+        <div>
+          <label for="">fecha</label>
+          <input type="date" />
+        </div>
+        <br />
+        <div>
+          <label for="">Fichero</label>
+          <input type="file" />
+        </div>
+        <br />
+        <div>
+          <label for="">Telefono</label>
+          <input type="tel" />
+        </div>
+        <br />
+        <div>
+          <label for="">Numero</label>
+          <input type="number" />
+        </div>
+        <br />
+        <div>
+          <label for="">hora</label>
+          <input type="time" />
+        </div>
+        <br />
+        <div>
+          <label for="">Sitio Web</label>
+          <input type="url" />
+        </div>
+        <br />
+        <div>
+          <label for="">Lista de datos</label>
+          <input list="frutas" name="fruta" />
+          <datalist id="frutas">
+            <option value="manzana"></option>
+            <option value="naranja"></option>
+            <option value="cereza"></option>
+            <option value="sandia"></option>
+            <option value="pera"></option>
+          </datalist>
+        </div>
+        <br />
+        <button type="submit">Enviar</button>
+        <!-- <input type="submit" value="Enviar datos" /> -->
+        <input type="reset" value="limpiar formulario" />
+      </fieldset>
+    </form>
+  </body>
+</html>
